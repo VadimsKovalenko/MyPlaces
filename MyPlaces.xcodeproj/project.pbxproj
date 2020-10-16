@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		DCED0FC92535D9C700F4EF93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED0FC82535D9C700F4EF93 /* AppDelegate.swift */; };
 		DCED0FCB2535D9C700F4EF93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED0FCA2535D9C700F4EF93 /* SceneDelegate.swift */; };
-		DCED0FCD2535D9C700F4EF93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED0FCC2535D9C700F4EF93 /* ViewController.swift */; };
 		DCED0FD02535D9C700F4EF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED0FCE2535D9C700F4EF93 /* Main.storyboard */; };
 		DCED0FD32535D9C700F4EF93 /* MyPlaces.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCED0FD12535D9C700F4EF93 /* MyPlaces.xcdatamodeld */; };
 		DCED0FD52535D9CA00F4EF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCED0FD42535D9CA00F4EF93 /* Assets.xcassets */; };
 		DCED0FD82535D9CA00F4EF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCED0FD62535D9CA00F4EF93 /* LaunchScreen.storyboard */; };
 		DCED0FE32535D9CA00F4EF93 /* MyPlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED0FE22535D9CA00F4EF93 /* MyPlacesTests.swift */; };
 		DCED0FEE2535D9CA00F4EF93 /* MyPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED0FED2535D9CA00F4EF93 /* MyPlacesUITests.swift */; };
+		DCED10022535DD0100F4EF93 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED10012535DD0100F4EF93 /* MainViewController.swift */; };
+		DCED10072535DDB300F4EF93 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED10062535DDB300F4EF93 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		DCED0FC52535D9C700F4EF93 /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCED0FC82535D9C700F4EF93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCED0FCA2535D9C700F4EF93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCED0FCC2535D9C700F4EF93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCED0FCF2535D9C700F4EF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCED0FD22535D9C700F4EF93 /* MyPlaces.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPlaces.xcdatamodel; sourceTree = "<group>"; };
 		DCED0FD42535D9CA00F4EF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		DCED0FE92535D9CA00F4EF93 /* MyPlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCED0FED2535D9CA00F4EF93 /* MyPlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesUITests.swift; sourceTree = "<group>"; };
 		DCED0FEF2535D9CA00F4EF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCED10012535DD0100F4EF93 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DCED10062535DDB300F4EF93 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,8 @@
 			children = (
 				DCED0FC82535D9C700F4EF93 /* AppDelegate.swift */,
 				DCED0FCA2535D9C700F4EF93 /* SceneDelegate.swift */,
-				DCED0FCC2535D9C700F4EF93 /* ViewController.swift */,
+				DCED10012535DD0100F4EF93 /* MainViewController.swift */,
+				DCED10062535DDB300F4EF93 /* TableViewCell.swift */,
 				DCED0FCE2535D9C700F4EF93 /* Main.storyboard */,
 				DCED0FD42535D9CA00F4EF93 /* Assets.xcassets */,
 				DCED0FD62535D9CA00F4EF93 /* LaunchScreen.storyboard */,
@@ -261,10 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCED0FCD2535D9C700F4EF93 /* ViewController.swift in Sources */,
+				DCED10072535DDB300F4EF93 /* TableViewCell.swift in Sources */,
 				DCED0FC92535D9C700F4EF93 /* AppDelegate.swift in Sources */,
 				DCED0FCB2535D9C700F4EF93 /* SceneDelegate.swift in Sources */,
 				DCED0FD32535D9C700F4EF93 /* MyPlaces.xcdatamodeld in Sources */,
+				DCED10022535DD0100F4EF93 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
